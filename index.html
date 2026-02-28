@@ -159,6 +159,33 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 
 body.break-mode .timer-progress{stroke:var(--success);}
 body.break-mode .btn-play{background:var(--success);}
+  /* Responsive Fix for Mobile */
+@media (max-width: 480px) {
+
+  .stats-bar {
+    flex-wrap: wrap;
+  }
+
+  .stat-card {
+    flex: 1 1 calc(50% - 5px);
+  }
+
+  .stat-card:last-child {
+    flex: 1 1 100%;
+  }
+
+  .stat-num {
+    font-size: 22px;
+  }
+
+  .session-count {
+    font-size: 10px;
+  }
+
+  .timer-display {
+    font-size: 52px;
+  }
+}
 </style>
 </head>
 <body>
