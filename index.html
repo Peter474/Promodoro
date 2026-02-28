@@ -160,31 +160,36 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
 body.break-mode .timer-progress{stroke:var(--success);}
 body.break-mode .btn-play{background:var(--success);}
   /* Responsive Fix for Mobile */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+  .container {
+    padding: 16px 12px 90px;
+  }
 
   .stats-bar {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
   }
 
   .stat-card {
-    flex: 1 1 calc(50% - 5px);
-  }
-
-  .stat-card:last-child {
-    flex: 1 1 100%;
+    padding: 10px 6px;
   }
 
   .stat-num {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .stat-lbl {
+    font-size: 8px;
+    letter-spacing: 1px;
   }
 
   .session-count {
-    font-size: 10px;
+    font-size: 9px;
   }
 
-  .timer-display {
-    font-size: 52px;
-  }
+}
 }
 </style>
 </head>
